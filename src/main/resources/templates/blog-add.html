@@ -8,16 +8,16 @@
 </head>
 <body>
 <header th:insert="blocks/header-and-footer::header">    </header>
-
-<div class="container mt-5mb-5">
-    <h1>Add a post </h1>
-    <!--post - data transferred to server implicitly , det - in URL address-->
-    <form action="/blog/add" method="post">
+<div class = "container-marketing">
+    <div class="container mt-5mb-5">
+        <h1>Add a feedback </h1>
+        <!--post - data transferred to server implicitly , det - in URL address-->
+     <form action="/blog/add" method="post">
         <input type="text" name ="author" placeholder="Enter your name" class="form-control"><br>
         <textarea name ="full_text" placeholder="Enter your text" class="form-control"></textarea><br>
-        <button type="submit" class="btn btn-success"> Add a post</button>
-    </form>
-
+        <button type="submit" class="btn btn-success"> Add a feedback</button>
+        </form>
+    </div>
 </div>
 <div th:insert="blocks/header-and-footer::footer"></div>
 </body>

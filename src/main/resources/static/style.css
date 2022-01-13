@@ -1,18 +1,19 @@
-
-
 /* for all projects to add this */
-html{
+html {
   box-sizing: border-box;
-  }
-  *, *:before, *:after{
-    box-sizing: inherit;
-  }
+  background-color: grey;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  body {
-    margin-left: auto;
-    margin-right: auto;
-    width:1000px;
-  }
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
 
 body {
   width: 80%;
@@ -22,19 +23,42 @@ body {
 #header {
   background-color: antiquewhite;
 }
-
-.container-marketing {
-  background-image: linear-gradient(purple, yellow, white);
+#footer {
+  background-image: linear-gradient(blue, orange, antiquewhite);
+  padding-top: 0;
+}
+.alert {
+  margin-bottom: 0;
 }
 
+.container-marketing {
+  background-image: linear-gradient(antiquewhite, orange, blue);
+}
+
+.bd-placeholder-img {
+  align-items: center;
+}
+.row {
+  align-items: center;
+  margin-left: 20px;
+}
+.rounded_image {
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
 #banner-bg {
   margin: auto;
-  background: -webkit-linear-gradient(purple, yellow, white);  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    purple,
+    yellow,
+    white
+  ); /* Chrome 10-25, Safari 5.1-6 */
   align-items: center;
   padding-top: 0;
   display: inline-block;
 }
 
-.image{
+.image {
   padding: 20px;
 }
