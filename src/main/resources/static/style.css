@@ -1,3 +1,40 @@
+
+
+/* for all projects to add this */
+html{
+  box-sizing: border-box;
+  }
+  *, *:before, *:after{
+    box-sizing: inherit;
+  }
+
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width:1000px;
+  }
+
 body {
+  width: 80%;
+  align-self: center;
+}
+
+#header {
+  background-color: antiquewhite;
+}
+
+.container-marketing {
   background-image: linear-gradient(purple, yellow, white);
+}
+
+#banner-bg {
+  margin: auto;
+  background: -webkit-linear-gradient(purple, yellow, white);  /* Chrome 10-25, Safari 5.1-6 */
+  align-items: center;
+  padding-top: 0;
+  display: inline-block;
+}
+
+.image{
+  padding: 20px;
 }
