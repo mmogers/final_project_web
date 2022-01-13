@@ -9,7 +9,7 @@
 </head>
 <body>
 <header th:insert="blocks/header-and-footer::header">    </header>
-
+<div class="container-marketing">
 <div class="container mt-5mb-5">
     <h1>Edit a post </h1>
     <div th:each="el: ${post}">
@@ -19,6 +19,7 @@
             <button type="submit" class="btn btn-success">Update</button>
         </form>
     </div>
+</div>
 </div>
 
 <div th:insert="blocks/header-and-footer::footer"></div>

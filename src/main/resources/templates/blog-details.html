@@ -8,7 +8,7 @@
 </head>
 <body>
 <header th:insert="blocks/header-and-footer::header">    </header>
-
+<div class="container-marketing">
 <div class="container mt-5">
     <div th:each="el : ${post}" class="alert alert-info mt-2">
         <h3 th:text="${el.author}"/>
@@ -20,6 +20,7 @@
         </form>
 
     </div>
+</div>
 </div>
 <div th:insert="blocks/header-and-footer::footer"></div>
 </body>
