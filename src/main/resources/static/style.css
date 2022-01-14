@@ -3,10 +3,10 @@ html {
   box-sizing: border-box;
   /* background-color: rgb(255, 224, 179); */
   background: -webkit-linear-gradient(
-    rgb(196, 14, 120),  
+    rgb(196, 14, 120),
     rgb(230, 180, 15),
-    rgb(235, 224, 213) 
-  ); 
+    rgb(235, 224, 213)
+  );
 }
 *,
 *:before,
@@ -17,27 +17,25 @@ html {
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
-}
-
-body {
   width: 80%;
   align-self: center;
 }
-
 
 #footer {
   color: antiquewhite;
   padding-top: 0;
 }
 
-
 .alert {
   margin-bottom: 0;
 }
 
 .container-marketing {
-  background-image: linear-gradient(antiquewhite, rgb(230, 180, 15), antiquewhite);
+  background-image: linear-gradient(
+    antiquewhite,
+    rgb(230, 180, 15),
+    antiquewhite
+  );
 }
 
 .bd-placeholder-img {
@@ -46,15 +44,13 @@ body {
 .row {
   align-items: center;
   margin-left: 20px;
-  margin-right:20px;
+  margin-right: 20px;
 }
 .rounded_image {
   align-items: center;
   align-self: center;
   align-content: center;
 }
-
-
 
 /* --- banner --- */
 .banner-bg {
@@ -63,7 +59,7 @@ body {
     rgb(196, 14, 120),
     rgb(230, 180, 15),
     rgb(235, 224, 213)
-  ); 
+  );
   align-items: center;
   padding-top: 50px;
   display: flex;
@@ -77,40 +73,38 @@ body {
   padding-right: 20px;
 }
 
-
 /* --- header --- */
 #header {
   /* background-color: antiquewhite; */
   color: antiquewhite;
   z-index: -1;
-  max-height: 40px
+  max-height: 40px;
 }
 
 .header-div {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .header-div nav a {
-  color:rgb(196, 14, 120);
+  color: rgb(196, 14, 120);
   font-weight: bolder;
   text-decoration: none;
   padding-right: 1em;
-  padding-top: 10px; 
+  padding-top: 10px;
   padding-bottom: 10px;
-  float: right; 
+  float: right;
   font-size: medium;
-  text-shadow: 2px 2px 2px rgba(206,89,55,0);
+  text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
 }
 
 .header-div nav a:hover {
-color: rgb(255, 218, 9), ;
+  color: rgb(255, 218, 9);
 }
 
-.icon-div{
+.icon-div {
   display: flex;
   justify-content: center;
-
 }
 
 /* #header .header-div .icon-div .icon {
@@ -164,6 +158,6 @@ margin: 0 auto;
   margin-top: 20px;
 }
 
-.footer-margin{
+.footer-margin {
   margin-left: 28px;
 }
