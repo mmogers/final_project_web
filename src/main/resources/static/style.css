@@ -1,7 +1,12 @@
 /* for all projects to add this */
 html {
   box-sizing: border-box;
-  background-color: grey;
+  /* background-color: rgb(255, 224, 179); */
+  background: -webkit-linear-gradient(
+    rgb(196, 14, 120),  
+    rgb(230, 180, 15),
+    rgb(235, 224, 213) 
+  ); 
 }
 *,
 *:before,
@@ -20,19 +25,19 @@ body {
   align-self: center;
 }
 
-#header {
-  background-color: antiquewhite;
-}
+
 #footer {
-  background-image: linear-gradient(blue, orange, antiquewhite);
+  color: antiquewhite;
   padding-top: 0;
 }
+
+
 .alert {
   margin-bottom: 0;
 }
 
 .container-marketing {
-  background-image: linear-gradient(antiquewhite, orange, blue);
+  background-image: linear-gradient(antiquewhite, rgb(230, 180, 15), antiquewhite);
 }
 
 .bd-placeholder-img {
@@ -41,24 +46,124 @@ body {
 .row {
   align-items: center;
   margin-left: 20px;
+  margin-right:20px;
 }
 .rounded_image {
   align-items: center;
   align-self: center;
   align-content: center;
 }
-#banner-bg {
+
+
+
+/* --- banner --- */
+.banner-bg {
   margin: auto;
   background: -webkit-linear-gradient(
-    purple,
-    yellow,
-    white
-  ); /* Chrome 10-25, Safari 5.1-6 */
+    rgb(196, 14, 120),
+    rgb(230, 180, 15),
+    rgb(235, 224, 213)
+  ); 
   align-items: center;
-  padding-top: 0;
-  display: inline-block;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  z-index: -1;
 }
 
 .image {
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* --- header --- */
+#header {
+  /* background-color: antiquewhite; */
+  color: antiquewhite;
+  z-index: -1;
+  max-height: 40px
+}
+
+.header-div {
+display: flex;
+flex-direction: row;
+}
+
+.header-div nav a {
+  color:rgb(196, 14, 120);
+  font-weight: bolder;
+  text-decoration: none;
+  padding-right: 1em;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  float: right; 
+  font-size: medium;
+  text-shadow: 2px 2px 2px rgba(206,89,55,0);
+}
+
+.header-div nav a:hover {
+color: rgb(255, 218, 9), ;
+}
+
+.icon-div{
+  display: flex;
+  justify-content: center;
+
+}
+
+/* #header .header-div .icon-div .icon {
+text-align: center;
+margin-top: 20px;
+margin-left: 350px;
+z-index: 1;
+width: 50px; 
+height: 50px;
+padding: 20px;
+margin: 0 auto;
+} */
+
+.icon {
+  height: 50px;
+  width: 50px;
+}
+
+/* --- download --- */
+/* #download-button {
+  color:rgb(196, 14, 120);
+  font-weight: bolder;
+  size: 36px;
+  text-decoration: none;
+  padding-right: 1em;
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  text-align: center; 
+  font-size: medium;
+  text-shadow: 2px 2px 2px rgba(206,89,55,0);
+} */
+
+/* .download {
+  background-color: rgb(230, 180, 15);
+}
+#download-button p:hover {
+  color: antiquewhite;
+} */
+
+/* --- center circles ---*/
+
+/* .row {
+  display: flex;
+  justify-content: space-around;
+} */
+
+.logo-image {
+  height: 144px;
+  padding: 20 px;
+  margin-left: 45%;
+  margin-top: 20px;
+}
+
+.footer-margin{
+  margin-left: 28px;
 }
