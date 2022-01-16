@@ -10,13 +10,33 @@
 </head>
 <body>
 <header th:insert="blocks/header-and-footer::header">    </header>
+
+
+
 <div class="container-marketing">
     <div class="container">
-    <h1> Feedbacks </h1>
+        <br>
+    <h1 class = "feedback"> FEEDBACK </h1>
+    <br>
     <div th:each="el : ${posts}" class="alert alert-warning ">
         <h3 th:text="${el.author}"/>
         <p th:text="${el.full_text}"/>
         <a th:href="'/blog/' + ${el.id}" class="btn btn-warning">More Details</a>
+    </div>
+
+    <div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="logo-bottom">
+            <br>
+            <img  src = "puzzle_game_logo_lighter_small.png">  </img>
+            <br>
+            <br>
+            <br>
     </div>
 
     </div>

@@ -2,11 +2,14 @@
 html {
   box-sizing: border-box;
   /* background-color: rgb(255, 224, 179); */
-  background: -webkit-linear-gradient(
-    rgb(196, 14, 120),
-    rgb(230, 180, 15),
+  /* background: -webkit-linear-gradient(
+    rgb(255, 90, 14),
+    rgb(255, 243, 77),
     rgb(235, 224, 213)
-  );
+  ); */
+
+  
+  background-image: url("pg_orange_bg_3.png");
 }
 *,
 *:before,
@@ -22,7 +25,7 @@ body {
 }
 
 #footer {
-  color: antiquewhite;
+  color: rgb(247, 235, 221);
   padding-top: 0;
 }
 
@@ -31,11 +34,13 @@ body {
 }
 
 .container-marketing {
-  background-image: linear-gradient(
-    antiquewhite,
-    rgb(230, 180, 15),
-    antiquewhite
-  );
+  /* background-image: linear-gradient(
+    antiquewhite,  
+    rgb(253, 178, 57)
+  ); */
+  background-image: url("yellow_bg_wide_2.png");
+  position: relative;
+  z-index: 3;
 }
 
 .bd-placeholder-img {
@@ -56,28 +61,32 @@ body {
 .banner-bg {
   margin: auto;
   background: -webkit-linear-gradient(
-    rgb(196, 14, 120),
-    rgb(230, 180, 15),
+    /* rgb(196, 14, 120), */
+    rgb(255, 82, 14),
+    rgb(255, 235, 57),
     rgb(235, 224, 213)
   );
   align-items: center;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
-  z-index: -1;
+  z-index: 3;
+  position: relative;
 }
 
 .image {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  height: 320px;
 }
 
 /* --- header --- */
 #header {
   /* background-color: antiquewhite; */
-  color: antiquewhite;
-  z-index: -1;
+  color: rgb(247, 235, 221);
+  position: relative;
+  z-index: 2;
   max-height: 40px;
 }
 
@@ -87,7 +96,7 @@ body {
 }
 
 .header-div nav a {
-  color: rgb(196, 14, 120);
+  color: rgb(197, 18, 78);
   font-weight: bolder;
   text-decoration: none;
   padding-right: 1em;
@@ -102,62 +111,113 @@ body {
   color: rgb(255, 218, 9);
 }
 
-.icon-div {
+/* .icon-div {
   display: flex;
   justify-content: center;
 }
 
-/* #header .header-div .icon-div .icon {
-text-align: center;
-margin-top: 20px;
-margin-left: 350px;
-z-index: 1;
-width: 50px; 
-height: 50px;
-padding: 20px;
-margin: 0 auto;
-} */
 
 .icon {
   height: 50px;
   width: 50px;
-}
-
-/* --- download --- */
-/* #download-button {
-  color:rgb(196, 14, 120);
-  font-weight: bolder;
-  size: 36px;
-  text-decoration: none;
-  padding-right: 1em;
-  padding-top: 10px; 
-  padding-bottom: 10px;
-  text-align: center; 
-  font-size: medium;
-  text-shadow: 2px 2px 2px rgba(206,89,55,0);
-} */
-
-/* .download {
-  background-color: rgb(230, 180, 15);
-}
-#download-button p:hover {
-  color: antiquewhite;
-} */
-
-/* --- center circles ---*/
-
-/* .row {
-  display: flex;
-  justify-content: space-around;
 } */
 
 .logo-image {
-  height: 144px;
+  height: 110px;
   padding: 20 px;
   margin-left: 45%;
-  margin-top: 20px;
+  position: relative;
+  z-index: 100;
+  top: -420px;
 }
 
 .footer-margin {
   margin-left: 28px;
 }
+
+/* about us */
+.team {
+  font-size: xx-large;
+  color: rgb(197, 18, 78);
+  font-weight: bolder;
+  text-align: center;
+}
+
+.artists-text {
+  font-size: medium;
+  text-align: center;
+  color: rgb(104, 1, 35);
+}
+
+.artists-names {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* home */
+
+.lead1{
+font-size: medium;
+font-weight: bold;
+text-align: justify;
+}
+
+.lead {
+  font-weight: bold;
+  color: rgb(104, 1, 35);
+}
+
+.featurette-heading {
+  color: rgb(150, 9, 56);
+}
+
+.many-pieces {
+  height: 380px;
+}
+
+
+/* home bottom */
+
+.home-bottom {
+  margin: auto;
+  background: -webkit-linear-gradient(
+    /* rgb(196, 14, 120), */
+    rgb(235, 224, 213),
+    rgb(255, 235, 57),
+    rgb(255, 82, 14)
+
+  );
+  align-items: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  position: relative;
+}
+
+.image-bottom {
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 250px;
+}
+
+/* feedback */
+.feedback {
+  text-align: center;
+}
+
+/* logo at bottom of other pages */
+.logo-bottom {
+  text-align: center;
+
+}
+
+.video-right {
+  float: right;
+}
+
+
+
+
