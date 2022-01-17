@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Puzzle edit</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,23 +9,20 @@
     <style>
         html {
             box-sizing: border-box;
-            background: #f3f1f1;
-            background-repeat: no-repeat;
+            background: rgb(255, 235, 57);
             width: 100%;
             height: auto;
             min-width: 1000px;
-            /* background-color: rgb(255, 224, 179); */
-            background: -webkit-linear-gradient(rgb(196, 14, 120),
-                    rgb(230, 180, 15),
-                    rgb(235, 224, 213));
+            /* background-image: url("pg_orange_bg_3.png"); */
+
         }
-    
+
         *,
         *:before,
         *:after {
             box-sizing: inherit;
         }
-    
+
         body {
             margin-left: auto;
             margin-right: auto;
@@ -32,40 +30,41 @@
             align-self: center;
             height: auto;
         }
-    
+
         #footer {
-            color: antiquewhite;
+            background-color: rgb(255, 247, 233);
             padding-top: 0;
         }
-    
+
         .alert {
             margin-bottom: 0;
         }
-    
+
         .container-marketing {
-            background-image: linear-gradient(antiquewhite,
-                    rgb(230, 180, 15),
-                    antiquewhite);
+            background: -webkit-linear-gradient(
+    rgb(255, 82, 14),
+    rgb(255, 235, 57),
+    rgb(235, 224, 213));
         }
-    
+
         .bd-placeholder-img {
             align-items: center;
         }
-    
+
         .row {
             align-items: center;
             margin-left: 20px;
             margin-right: 20px;
         }
-    
+
         .rounded_image {
             align-items: center;
             align-self: center;
             align-content: center;
         }
-    
+
         /* --- banner --- */
-        .banner-bg {
+        /* .banner-bg {
             margin: auto;
             background: -webkit-linear-gradient(rgb(196, 14, 120),
                     rgb(230, 180, 15),
@@ -75,29 +74,29 @@
             display: flex;
             justify-content: space-around;
             z-index: -1;
-        }
-    
+        } */
+
         .image {
             padding-top: 20px;
             padding-left: 20px;
             padding-right: 20px;
         }
-    
+
         /* --- header --- */
         #header {
             /* background-color: antiquewhite; */
-            color: antiquewhite;
+            background-color: rgb(255, 247, 233);
             z-index: -1;
             max-height: 40px;
         }
-    
+
         .header-div {
             display: flex;
             flex-direction: row;
         }
-    
+
         .header-div nav a {
-            color: rgb(196, 14, 120);
+            color: rgb(197, 18, 78);
             font-weight: bolder;
             text-decoration: none;
             padding-right: 1em;
@@ -107,16 +106,16 @@
             font-size: medium;
             text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
         }
-    
+
         .header-div nav a:hover {
             color: rgb(255, 218, 9);
         }
-    
+
         .icon-div {
             display: flex;
             justify-content: center;
         }
-    
+
         /* #header .header-div .icon-div .icon {
     text-align: center;
     margin-top: 20px;
@@ -127,12 +126,12 @@
     padding: 20px;
     margin: 0 auto;
     } */
-    
+
         .icon {
             height: 50px;
             width: 50px;
         }
-    
+
         /* --- download --- */
         /* #download-button {
       color:rgb(196, 14, 120);
@@ -146,55 +145,73 @@
       font-size: medium;
       text-shadow: 2px 2px 2px rgba(206,89,55,0);
     } */
-    
+
         /* .download {
       background-color: rgb(230, 180, 15);
     }
     #download-button p:hover {
       color: antiquewhite;
     } */
-    
+
         /* --- center circles ---*/
-    
+
         /* .row {
       display: flex;
       justify-content: space-around;
     } */
-    
+
         .logo-image {
             height: 144px;
             padding: 20 px;
             margin-left: 45%;
             margin-top: 20px;
         }
-    
+
         .footer-margin {
             margin-left: 28px;
         }
-    
+
         textarea {
             height: 300px;
         }
-        button{
+
+        button {
             margin-bottom: 450px;
         }
     </style>
 </head>
-<body>
-<header th:insert="blocks/header-and-footer::header">    </header>
-<div class="container-marketing">
-<div class="container mt-5mb-5">
-    <h1>Edit a post </h1>
-    <div th:each="el: ${post}">
-        <form method="post">
-            <input type="text" th:value="${el.author}" name ="author" placeholder="Edit your name" class="form-control"><br>
-            <textarea name ="full_text" placeholder="Edit your text" class="form-control" th:text="${el.full_text}"/><br>
-            <button type="submit" class="btn btn-outline-dark btn-warning">Update</button>
-        </form>
-    </div>
-</div>
-</div>
 
-<div th:insert="blocks/header-and-footer::footer"></div>
+<body>
+    <header th:insert="blocks/header-and-footer::header"> </header>
+    <div class="container-marketing">
+        <div class="container mt-5mb-5">
+            <h1>Edit a post </h1>
+            <div th:each="el: ${post}">
+                <form method="post">
+                    <input type="text" th:value="${el.author}" name="author" placeholder="Edit your name"
+                        class="form-control"><br>
+                    <textarea name="full_text" placeholder="Edit your text" class="form-control"
+                        th:text="${el.full_text}" /><br>
+                    <button type="submit" class="btn btn-outline-dark btn-warning">Update</button>
+                </form>
+            </div>
+        </div>
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+    <div th:insert="blocks/header-and-footer::footer"></div>
 </body>
+
 </html>

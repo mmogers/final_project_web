@@ -22,10 +22,12 @@ body {
   margin-right: auto;
   width: 80%;
   align-self: center;
+  max-width: 1300px;
+  min-width: 1100px;
 }
 
 #footer {
-  color: rgb(247, 235, 221);
+  background-color: rgb(255,247,233);
   padding-top: 0;
 }
 
@@ -41,6 +43,7 @@ body {
   background-image: url("yellow_bg_wide_2.png");
   position: relative;
   z-index: 3;
+  
 }
 
 .bd-placeholder-img {
@@ -57,7 +60,7 @@ body {
   align-content: center;
 }
 
-/* --- banner --- */
+/* --- home banner --- */
 .banner-bg {
   margin: auto;
   background: -webkit-linear-gradient(
@@ -65,13 +68,31 @@ body {
     rgb(255, 82, 14),
     rgb(255, 235, 57),
     rgb(235, 224, 213)
-  );
+  ); 
+  border-bottom: 4px inset rgb(255, 82, 14);
   align-items: center;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
   z-index: 3;
   position: relative;
+}
+
+.description {
+  background-color: rgba(255, 247, 233, 0.733);
+  text-align: center;
+position: relative;
+margin-top: -110px;
+box-shadow: 0px 6px 15px -9px rgba(148,44,16,0.84);
+}
+
+.description-text {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+  color: rgb(197, 18, 78);
+  padding-top: 12px;
+  padding-bottom: 1px;
 }
 
 .image {
@@ -83,8 +104,7 @@ body {
 
 /* --- header --- */
 #header {
-  /* background-color: antiquewhite; */
-  color: rgb(247, 235, 221);
+  background-color: rgb(255,247,233);
   position: relative;
   z-index: 2;
   max-height: 40px;
@@ -122,14 +142,17 @@ body {
   width: 50px;
 } */
 
+
 .logo-image {
   height: 110px;
   padding: 20 px;
-  margin-left: 45%;
+  /* margin-left: 45%;  */
   position: relative;
   z-index: 100;
   top: -420px;
-}
+  left: 50%;
+transform: translateX(-50%);
+} 
 
 .footer-margin {
   margin-left: 28px;
@@ -141,6 +164,7 @@ body {
   color: rgb(197, 18, 78);
   font-weight: bolder;
   text-align: center;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 .artists-text {
@@ -159,8 +183,8 @@ body {
 
 .lead1{
 font-size: medium;
-font-weight: bold;
 text-align: justify;
+font-weight: bold;
 }
 
 .lead {
@@ -172,6 +196,18 @@ text-align: justify;
   color: rgb(150, 9, 56);
 }
 
+
+.video-right {
+  float: right;
+  padding-bottom: 10px;
+
+}
+
+.video-left {
+  padding-bottom: 10px;
+
+}
+
 .many-pieces {
   height: 380px;
 }
@@ -179,21 +215,32 @@ text-align: justify;
 
 /* home bottom */
 
-.home-bottom {
+.improvements {
+  /* border: 1px dotted #d3591c; */
+  border-radius: 11px;
+  width: 400px;
   margin: auto;
-  background: -webkit-linear-gradient(
-    /* rgb(196, 14, 120), */
-    rgb(235, 224, 213),
-    rgb(255, 235, 57),
-    rgb(255, 82, 14)
+  background-color: rgb(255,247,233, 0.3);
+}
 
-  );
-  align-items: center;
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-around;
-  z-index: 3;
-  position: relative;
+.improvements-heading {
+  color: rgb(150, 9, 56);
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+
+}
+
+.improvements-text {
+  text-align:left;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.suggestions {
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .image-bottom {
@@ -206,17 +253,32 @@ text-align: justify;
 /* feedback */
 .feedback {
   text-align: center;
+  color: rgb(150, 9, 56);
+text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 /* logo at bottom of other pages */
 .logo-bottom {
   text-align: center;
-
 }
 
-.video-right {
-  float: right;
+.home-bottom {
+  margin: auto;
+  background: -webkit-linear-gradient(
+    /* rgb(196, 14, 120), */
+    rgb(235, 224, 213),
+    rgb(255, 235, 57),
+    rgb(255, 82, 14)
+  );
+  box-shadow: 0px -9px 15px -9px rgba(148,44,16,0.84);
+  align-items: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  position: relative;
 }
+
 
 
 

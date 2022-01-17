@@ -1,126 +1,123 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
+
 <head>
-    <title>Puzzle post</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <title>Puzzle post</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
   <style>
-      html {
-  box-sizing: border-box;
-  background: #f3f1f1;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-  min-width: 1000px;
-  /* background-color: rgb(255, 224, 179); */
-  background: -webkit-linear-gradient(
-    rgb(196, 14, 120),
-    rgb(230, 180, 15),
-    rgb(235, 224, 213)
-    
-  );
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+    html {
+      box-sizing: border-box;
+      background: rgb(255, 247, 233);
+      background-repeat: no-repeat;
+      width: 100%;
+      height: auto;
+      min-width: 1000px;
+      /* background-color: rgb(255, 224, 179); */
+      background: -webkit-linear-gradient(rgb(255, 82, 14),
+          rgb(230, 180, 15),
+          rgb(255, 247, 233));
+    }
 
-body {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  align-self: center;
-  height: auto;
-}
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
 
-#footer {
-  color: antiquewhite;
-  padding-top: 0;
-}
+    body {
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      align-self: center;
+      height: auto;
+    }
 
-.alert {
-  margin-bottom: 0;
-}
+    #footer {
+      color: rgb(255, 247, 233);
+      padding-top: 0;
+    }
 
-.container-marketing {
-  background-image: linear-gradient(
-    antiquewhite,
-    rgb(230, 180, 15),
-    antiquewhite
-  );
-}
+    .alert {
+      margin-bottom: 0;
+    }
 
-.bd-placeholder-img {
-  align-items: center;
-}
-.row {
-  align-items: center;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.rounded_image {
-  align-items: center;
-  align-self: center;
-  align-content: center;
-}
+    .container-marketing {
+      background: -webkit-linear-gradient(rgb(255, 235, 57),
+          rgb(235, 224, 213),
+          rgb(255, 235, 57))
+    }
 
-/* --- banner --- */
-.banner-bg {
-  margin: auto;
-  background: -webkit-linear-gradient(
-    rgb(196, 14, 120),
-    rgb(230, 180, 15),
-    rgb(235, 224, 213)
-  );
-  align-items: center;
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-around;
-  z-index: -1;
-}
+    .bd-placeholder-img {
+      align-items: center;
+    }
 
-.image {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+    .row {
+      align-items: center;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
 
-/* --- header --- */
-#header {
-  /* background-color: antiquewhite; */
-  color: antiquewhite;
-  z-index: -1;
-  max-height: 40px;
-}
+    .rounded_image {
+      align-items: center;
+      align-self: center;
+      align-content: center;
+    }
 
-.header-div {
-  display: flex;
-  flex-direction: row;
-}
+    /* --- banner --- */
+    .banner-bg {
+      margin: auto;
+      background: -webkit-linear-gradient(rgb(255, 82, 14),
+          rgb(230, 180, 15),
+          rgb(235, 224, 213));
+      align-items: center;
+      padding-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      z-index: -1;
+    }
 
-.header-div nav a {
-  color: rgb(196, 14, 120);
-  font-weight: bolder;
-  text-decoration: none;
-  padding-right: 1em;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  float: right;
-  font-size: medium;
-  text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
-}
+    .image {
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-.header-div nav a:hover {
-  color: rgb(255, 218, 9);
-}
+    /* --- header --- */
+    #header {
+      /* background-color: antiquewhite; */
+      color: rgb(255, 247, 233);
+      z-index: -1;
+      max-height: 40px;
+    }
 
-.icon-div {
-  display: flex;
-  justify-content: center;
-}
+    .header-div {
+      display: flex;
+      flex-direction: row;
+    }
 
-/* #header .header-div .icon-div .icon {
+    .header-div nav a {
+      color: rgb(196, 14, 120);
+      font-weight: bolder;
+      text-decoration: none;
+      padding-right: 1em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      float: right;
+      font-size: medium;
+      text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
+    }
+
+    .header-div nav a:hover {
+      color: rgb(255, 218, 9);
+    }
+
+    .icon-div {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* #header .header-div .icon-div .icon {
 text-align: center;
 margin-top: 20px;
 margin-left: 350px;
@@ -131,13 +128,13 @@ padding: 20px;
 margin: 0 auto;
 } */
 
-.icon {
-  height: 50px;
-  width: 50px;
-}
+    .icon {
+      height: 50px;
+      width: 50px;
+    }
 
-/* --- download --- */
-/* #download-button {
+    /* --- download --- */
+    /* #download-button {
   color:rgb(196, 14, 120);
   font-weight: bolder;
   size: 36px;
@@ -150,71 +147,76 @@ margin: 0 auto;
   text-shadow: 2px 2px 2px rgba(206,89,55,0);
 } */
 
-/* .download {
+    /* .download {
   background-color: rgb(230, 180, 15);
 }
 #download-button p:hover {
   color: antiquewhite;
 } */
 
-/* --- center circles ---*/
+    /* --- center circles ---*/
 
-/* .row {
+    /* .row {
   display: flex;
   justify-content: space-around;
 } */
 
-.logo-image {
-  height: 144px;
-  padding: 20 px;
-  margin-left: 45%;
-  margin-top: 20px;
-}
+    .logo-image {
+      height: 144px;
+      padding: 20 px;
+      margin-left: 45%;
+      margin-top: 20px;
+    }
 
-.footer-margin {
-  margin-left: 28px;
-}
-textarea{
-    height: 300px;}
-button{
-    margin-bottom: 300px;
-}
+    .footer-margin {
+      margin-left: 28px;
+    }
 
-  </style>  
+    textarea {
+      height: 300px;
+    }
+
+    button {
+      margin-bottom: 300px;
+    }
+
+    .add-feedback {
+      text-align: center;
+      color: rgb(150, 9, 56);
+      text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+    }
+  </style>
 </head>
+
 <body>
-<header th:insert="blocks/header-and-footer::header">    </header>
-<div class = "container-marketing">
+  <header th:insert="blocks/header-and-footer::header"> </header>
+  <div class="container-marketing">
     <div class="container mt-5mb-5">
-        <br>
-        <br>
-        <br>
-        <h1>Add a feedback </h1>
-        <br>
-        <br>
-        
-        <!--post - data transferred to server implicitly , det - in URL address-->
-     <form action="/blog/add" method="post">
-        <input type="text" name ="author" placeholder="Enter your name" class="form-control"><br>
-        <textarea name ="full_text" placeholder="Enter your text" class="form-control"></textarea>
+      <br>
+      <br>
+      <br>
+      <h1 class="add-feedback">Add a feedback </h1>
+      <br>
+      <br>
+
+      <!--post - data transferred to server implicitly , det - in URL address-->
+      <form action="/blog/add" method="post">
+        <input type="text" name="author" placeholder="Enter your name" class="form-control"><br>
+        <textarea name="full_text" placeholder="Enter your text" class="form-control"></textarea>
         <br>
         <br>
         <br>
         <button type="submit" class="btn btn-outline-dark btn-warning"> Add a feedback</button>
-       
-    
-        </form>
 
-        <div class="logo-bottom">
-          <br>
-          <img  src = "puzzle_game_logo_lighter.png">  </img>
-          <br>
-  </div>
-       
+
+      </form>
+
+
     </div>
-</div>
+  </div>
 
 
-<div th:insert="blocks/header-and-footer::footer"></div>
+  <div th:insert="blocks/header-and-footer::footer"></div>
 </body>
+
 </html>
