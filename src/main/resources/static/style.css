@@ -1,12 +1,7 @@
 /* for all projects to add this */
 html {
   box-sizing: border-box;
-  /* background-color: rgb(255, 224, 179); */
-  background: -webkit-linear-gradient(
-    rgb(196, 14, 120),  
-    rgb(230, 180, 15),
-    rgb(235, 224, 213) 
-  ); 
+  background-image: url("pg_orange_bg_3.png");
 }
 *,
 *:before,
@@ -17,27 +12,206 @@ html {
 body {
   margin-left: auto;
   margin-right: auto;
-  width: 1000px;
-}
-
-body {
   width: 80%;
   align-self: center;
+  max-width: 1300px;
+  min-width: 1100px;
 }
 
-
-#footer {
-  color: antiquewhite;
-  padding-top: 0;
+/* --- header --- */
+#header {
+  background-color: rgb(255,247,233);
+  position: relative;
+  z-index: 2;
+  max-height: 40px;
 }
 
+.header-div {
+  display: flex;
+  flex-direction: row;
+}
 
-.alert {
-  margin-bottom: 0;
+.header-div nav a {
+  color: rgb(197, 18, 78);
+  font-weight: bolder;
+  text-decoration: none;
+  padding-right: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: right;
+  font-size: medium;
+  text-shadow: 2px 2px 2px rgba(206, 89, 55, 0);
+}
+
+.header-div nav a:hover {
+  color: rgb(255, 218, 9);
 }
 
 .container-marketing {
-  background-image: linear-gradient(antiquewhite, rgb(230, 180, 15), antiquewhite);
+  /* background-image: linear-gradient(
+    antiquewhite,  
+    rgb(253, 178, 57)
+  ); */
+  background-image: url("yellow_bg_wide_2.png");
+  position: relative;
+  z-index: 3;
+  
+}
+
+/* --- home banner --- */
+.banner-bg {
+  margin: auto;
+  background: -webkit-linear-gradient(
+    /* rgb(196, 14, 120), */
+    rgb(255, 82, 14),
+    rgb(255, 235, 57),
+    rgb(235, 224, 213)
+  ); 
+  border-bottom: 4px inset rgb(255, 82, 14);
+  align-items: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  position: relative;
+}
+
+.description {
+  background-color: rgba(255, 247, 233, 0.733);
+  text-align: center;
+position: relative;
+margin-top: -110px;
+box-shadow: 0px 6px 15px -9px rgba(148,44,16,0.84);
+}
+
+.description-text {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+  color: rgb(197, 18, 78);
+  padding-top: 12px;
+  padding-bottom: 1px;
+}
+
+.image {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 320px;
+}
+
+
+/* logo */
+.logo-image {
+  height: 110px;
+  padding: 20 px;
+  /* margin-left: 45%;  */
+  position: relative;
+  z-index: 100;
+  top: -420px;
+  left: 50%;
+transform: translateX(-50%);
+} 
+
+
+/* home middle */
+.lead1{
+font-size: medium;
+text-align: justify;
+font-weight: bold;
+}
+
+.lead {
+  font-weight: bold;
+  color: rgb(104, 1, 35);
+}
+
+.featurette-heading {
+  color: rgb(150, 9, 56);
+}
+
+
+.video-right {
+  float: right;
+  padding-bottom: 10px;
+
+}
+
+.video-left {
+  padding-bottom: 10px;
+
+}
+
+/* home bottom */
+.improvements {
+  /* border: 1px dotted #d3591c; */
+  border-radius: 11px;
+  width: 400px;
+  margin: auto;
+  background-color: rgb(255,247,233, 0.3);
+}
+
+.improvements-heading {
+  color: rgb(150, 9, 56);
+  font-size: large;
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+
+}
+
+.improvements-text {
+  text-align:left;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.suggestions {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.image-bottom {
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-right: 14px;
+  height: 250px;
+}
+
+.home-bottom {
+  margin: auto;
+  background: -webkit-linear-gradient(
+    /* rgb(196, 14, 120), */
+    rgb(235, 224, 213),
+    rgb(255, 235, 57),
+    rgb(255, 82, 14)
+  );
+  box-shadow: 0px -9px 15px -9px rgba(148,44,16,0.84);
+  align-items: center;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 3;
+  position: relative;
+}
+
+/* footer */
+#footer {
+  background-color: rgb(255,247,233);
+  padding-top: 0;
+}
+
+.footer-margin {
+  margin-left: 28px;
+}
+
+/* about us */
+.team {
+  font-size: xx-large;
+  color: rgb(197, 18, 78);
+  font-weight: bolder;
+  text-align: center;
+  text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
 .bd-placeholder-img {
@@ -46,7 +220,7 @@ body {
 .row {
   align-items: center;
   margin-left: 20px;
-  margin-right:20px;
+  margin-right: 20px;
 }
 .rounded_image {
   align-items: center;
@@ -54,116 +228,41 @@ body {
   align-content: center;
 }
 
-
-
-/* --- banner --- */
-.banner-bg {
-  margin: auto;
-  background: -webkit-linear-gradient(
-    rgb(196, 14, 120),
-    rgb(230, 180, 15),
-    rgb(235, 224, 213)
-  ); 
-  align-items: center;
-  padding-top: 50px;
-  display: flex;
-  justify-content: space-around;
-  z-index: -1;
-}
-
-.image {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-
-/* --- header --- */
-#header {
-  /* background-color: antiquewhite; */
-  color: antiquewhite;
-  z-index: -1;
-  max-height: 40px
-}
-
-.header-div {
-display: flex;
-flex-direction: row;
-}
-
-.header-div nav a {
-  color:rgb(196, 14, 120);
-  font-weight: bolder;
-  text-decoration: none;
-  padding-right: 1em;
-  padding-top: 10px; 
-  padding-bottom: 10px;
-  float: right; 
+.artists-text {
   font-size: medium;
-  text-shadow: 2px 2px 2px rgba(206,89,55,0);
+  text-align: center;
+  color: rgb(104, 1, 35);
 }
 
-.header-div nav a:hover {
-color: rgb(255, 218, 9), ;
+.artists-names {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
 }
 
-.icon-div{
-  display: flex;
-  justify-content: center;
-
+/* feedback */
+.feedback {
+  text-align: center;
+  color: rgb(150, 9, 56);
+text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
 }
 
-/* #header .header-div .icon-div .icon {
-text-align: center;
-margin-top: 20px;
-margin-left: 350px;
-z-index: 1;
-width: 50px; 
-height: 50px;
-padding: 20px;
-margin: 0 auto;
-} */
-
-.icon {
-  height: 50px;
-  width: 50px;
+/* logo at bottom of other pages */
+.logo-bottom {
+  text-align: center;
 }
 
-/* --- download --- */
-/* #download-button {
-  color:rgb(196, 14, 120);
-  font-weight: bolder;
-  size: 36px;
-  text-decoration: none;
-  padding-right: 1em;
-  padding-top: 10px; 
-  padding-bottom: 10px;
-  text-align: center; 
-  font-size: medium;
-  text-shadow: 2px 2px 2px rgba(206,89,55,0);
-} */
-
-/* .download {
-  background-color: rgb(230, 180, 15);
-}
-#download-button p:hover {
-  color: antiquewhite;
-} */
-
-/* --- center circles ---*/
-
-/* .row {
-  display: flex;
-  justify-content: space-around;
-} */
-
-.logo-image {
-  height: 144px;
-  padding: 20 px;
-  margin-left: 45%;
-  margin-top: 20px;
+/* etc */
+.alert {
+  margin-bottom: 0;
 }
 
-.footer-margin{
-  margin-left: 28px;
-}
+
+
+
+
+
+
+
+
+
