@@ -8,7 +8,7 @@
   <style>
     html {
       box-sizing: border-box;
-      background: rgb(255, 247, 233);
+      background: rgb(255, 253, 250);
       background-repeat: no-repeat;
       width: 100%;
       height: auto;
@@ -185,6 +185,11 @@ margin: 0 auto;
       color: rgb(150, 9, 56);
       text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
     }
+
+    .form-div {
+      width: 60%;
+      margin: auto;
+    }
   </style>
 </head>
 
@@ -194,11 +199,10 @@ margin: 0 auto;
     <div class="container mt-5mb-5">
       <br>
       <br>
+      <h1 class="add-feedback">Add feedback </h1>
       <br>
-      <h1 class="add-feedback">Add a feedback </h1>
-      <br>
-      <br>
-
+      
+<div class="form-div">
       <!--post - data transferred to server implicitly , det - in URL address-->
       <form action="/blog/add" method="post">
         <input type="text" name="author" placeholder="Enter your name" class="form-control"><br>
@@ -211,7 +215,7 @@ margin: 0 auto;
 
       </form>
 
-
+</div>
     </div>
   </div>
 

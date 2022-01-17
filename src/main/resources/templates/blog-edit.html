@@ -9,10 +9,13 @@
     <style>
         html {
             box-sizing: border-box;
-            background: rgb(255, 235, 57);
+            background: rgb(255, 253, 250);
             width: 100%;
             height: auto;
             min-width: 1000px;
+            background: -webkit-linear-gradient(rgb(255, 82, 14),
+                    rgb(230, 180, 15),
+                    rgb(255, 247, 233));
             /* background-image: url("pg_orange_bg_3.png"); */
 
         }
@@ -41,10 +44,9 @@
         }
 
         .container-marketing {
-            background: -webkit-linear-gradient(
-    rgb(255, 82, 14),
-    rgb(255, 235, 57),
-    rgb(235, 224, 213));
+            background: -webkit-linear-gradient(rgb(255, 235, 57),
+                    rgb(235, 224, 213),
+                    rgb(255, 235, 57))
         }
 
         .bd-placeholder-img {
@@ -178,6 +180,18 @@
         button {
             margin-bottom: 450px;
         }
+
+        .edit {
+            text-align: center;
+            color: rgb(150, 9, 56);
+            text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.2);
+
+        }
+
+        .edit-post {
+            width: 60%;
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -185,15 +199,20 @@
     <header th:insert="blocks/header-and-footer::header"> </header>
     <div class="container-marketing">
         <div class="container mt-5mb-5">
-            <h1>Edit a post </h1>
-            <div th:each="el: ${post}">
-                <form method="post">
-                    <input type="text" th:value="${el.author}" name="author" placeholder="Edit your name"
-                        class="form-control"><br>
-                    <textarea name="full_text" placeholder="Edit your text" class="form-control"
-                        th:text="${el.full_text}" /><br>
-                    <button type="submit" class="btn btn-outline-dark btn-warning">Update</button>
-                </form>
+            <br>
+            <br>
+            <h1 class="edit">Edit post</h1>
+            <br>
+            <div class="edit-post">
+                <div th:each="el: ${post}">
+                    <form method="post">
+                        <input type="text" th:value="${el.author}" name="author" placeholder="Edit your name"
+                            class="form-control"><br>
+                        <textarea name="full_text" placeholder="Edit your text" class="form-control"
+                            th:text="${el.full_text}" /><br>
+                        <button type="submit" class="btn btn-outline-dark btn-warning">Update</button>
+                    </form>
+                </div>
             </div>
         </div>
         <div>

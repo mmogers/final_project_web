@@ -8,11 +8,13 @@
     <style>
         html {
             box-sizing: border-box;
-            background: rgb(255, 235, 57);
+            background: rgb(255, 253, 250);
             width: 100%;
             height: auto;
             min-width: 1000px;
-            /* background-color: rgb(255, 224, 179); */
+            background: -webkit-linear-gradient(rgb(255, 82, 14),
+                    rgb(230, 180, 15),
+                    rgb(255, 247, 233));
             /* background-image: url("pg_orange_bg_3.png"); */
         }
 
@@ -40,9 +42,9 @@
         }
 
         .container-marketing {
-            background: -webkit-linear-gradient(rgb(255, 82, 14),
-                    rgb(255, 235, 57),
-                    rgb(235, 224, 213));
+            background: -webkit-linear-gradient(rgb(255, 235, 57),
+                    rgb(235, 224, 213),
+                    rgb(255, 235, 57))
         }
 
         .bd-placeholder-img {
@@ -172,22 +174,43 @@ margin: 0 auto;
         textarea {
             height: 300px;
         }
+
+        .details-container {
+            width: 60%;
+            margin: auto;
+        }
     </style>
 </head>
 
 <body>
     <header th:insert="blocks/header-and-footer::header"> </header>
     <div class="container-marketing">
-        <div class="container">
-            <div th:each="el : ${post}" class="alert alert-warning ">
-                <h3 th:text="${el.author}" />
-                <p th:text="${el.full_text}" />
-                <a th:href="'/blog/' + ${el.id} + '/edit'" class="btn btn-outline-dark btn-warning ">Edit</a><br><br>
-                <!-- processing button delete will be on URL address blog/5(id)/remove-->
-                <form th:action="'/blog/' + ${el.id} + '/remove/'" method="post">
-                    <button class="btn btn-outline-dark btn-warning" type="submit">Delete</button>
-                </form>
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
 
+        <div class="container">
+            <div class="details-container">
+                <div th:each="el : ${post}" class="alert alert-warning ">
+                    <h3 th:text="${el.author}" />
+                    <p th:text="${el.full_text}" />
+                    <br>
+                    <a th:href="'/blog/' + ${el.id} + '/edit'"
+                        class="btn btn-outline-dark btn-warning ">Edit</a><br><br>
+                    <!-- processing button delete will be on URL address blog/5(id)/remove-->
+                    <br>
+                    <form th:action="'/blog/' + ${el.id} + '/remove/'" method="post">
+                        <button class="btn btn-outline-dark btn-warning" type="submit">Delete</button>
+                    </form>
+
+                </div>
             </div>
             <div>
                 <br>
