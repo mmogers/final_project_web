@@ -13,11 +13,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>web</name>
 	<description>Demo project for Spring Boot</description>
-	<!--
+
 	<properties>
 		<java.version>11</java.version>
 	</properties>
-	-->
 
 	<dependencies>
 		<dependency>
@@ -56,12 +55,6 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
-			<groupId>com.apple</groupId>
-			<artifactId>AppleJavaExtensions</artifactId>
-			<version>1.4</version>
-		</dependency>
-
 
 	</dependencies>
 
